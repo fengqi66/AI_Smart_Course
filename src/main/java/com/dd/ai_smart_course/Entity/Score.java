@@ -12,5 +12,5 @@ public class Score {
     private int taskId;
     private BigDecimal grade; // 用BigDecimal存储浮点分数
     private String comment;
-    private Timestamp submitTime;
+    private Timestamp submitTime; // 提交时间，格式为 YYYY-MM-DD HH:MM:SS
 }

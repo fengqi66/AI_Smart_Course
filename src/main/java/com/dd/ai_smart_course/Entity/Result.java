@@ -14,29 +14,10 @@ public class Result<T> {
         Data = data;
     }
 
-    public int getCode() {
-        return code;
+    public static <T> Result<T> success() {
+        return new Result<>(200, "操作成功", null);
     }
 
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public T getData() {
-        return Data;
-    }
-
-    public void setData(T data) {
-        Data = data;
-    }
 
     // 成功：默认信息
     public static <T> Result<T> success(T data) {
